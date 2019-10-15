@@ -6,6 +6,9 @@ SDL2 ControllerMap is a utility for building [SDL2 Controller Mappings].
 
 Press the buttons as they are highlighted.
 
+**NOTE:** The visual aid is similar to an XBox controller, which has A and B
+reversed compared to RG350/GCW0.
+
 To skip a button that your device doesn't have, press a button that you've
 already bound.
 

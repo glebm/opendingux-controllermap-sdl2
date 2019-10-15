@@ -8,4 +8,5 @@ Type=Application
 StartupNotify=true
 Icon=logo
 Categories=applications;
+X-OD-Manual=readme.gcw0.txt
 X-OD-NeedsJoystick=true

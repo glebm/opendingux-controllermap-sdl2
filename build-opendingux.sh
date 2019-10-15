@@ -13,6 +13,7 @@ cmake .. -DCMAKE_TOOLCHAIN_FILE="$BUILDROOT/output/host/usr/share/buildroot/tool
 make
 
 mksquashfs \
-  controllermap ../controllermap.sh ../default.gcw0.desktop ../logo.png ../controllermap.bmp ../button.bmp ../axis.bmp \
+  controllermap ../controllermap.sh ../default.gcw0.desktop ../readme.gcw0.txt \
+  ../logo.png ../controllermap.bmp ../button.bmp ../axis.bmp \
   controllermap-sdl2.opk \
   -all-root -no-xattrs -noappend -no-exports

@@ -173,7 +173,7 @@ WatchJoystick(SDL_Joystick * joystick)
     Press the buttons on your controller when indicated\n\
     (Your controller may look different than the picture)\n\
     If you want to correct a mistake, press backspace or the back button on your device\n\
-    To skip a button, press SPACE or click/touch the screen\n\
+    To skip a button, press an already mapped button\n\
     To exit, press ESC\n\
     ====================================================================================\n");
     

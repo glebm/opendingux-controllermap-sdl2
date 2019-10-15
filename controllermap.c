@@ -232,6 +232,9 @@ WatchJoystick(SDL_Joystick * joystick)
             if (SDL_PollEvent(&event)) {
                 switch (event.type) {
                 case SDL_JOYAXISMOTION:
+#ifdef DEBUG_CONTROLLERMAP
+                    SDL_Log("AXIS %d value %d\n", event.jaxis.axis, event.jaxis.value);
+#endif
                     if ((event.jaxis.value > 20000 || event.jaxis.value < -20000) && event.jaxis.value != -32768) {
                         for (_s = 0; _s < s; _s++) {
                             if (steps[_s].axis == event.jaxis.axis) {
@@ -250,6 +253,9 @@ WatchJoystick(SDL_Joystick * joystick)
                     
                     break;
                 case SDL_JOYHATMOTION:
+#ifdef DEBUG_CONTROLLERMAP
+                        SDL_Log("HAT %d %d\n", event.jhat.hat, event.jhat.value);
+#endif
                         if (event.jhat.value == SDL_HAT_CENTERED) {
                             break;  /* ignore centering, we're probably just coming back to the center from the previous item we set. */
                         }
@@ -271,6 +277,9 @@ WatchJoystick(SDL_Joystick * joystick)
                 case SDL_JOYBALLMOTION:
                     break;
                 case SDL_JOYBUTTONUP:
+#ifdef DEBUG_CONTROLLERMAP
+                    SDL_Log("BUTTON %d\n", event.jbutton.button);
+#endif
                     for (_s = 0; _s < s; _s++) {
                         if (steps[_s].button == event.jbutton.button) {
                             break;

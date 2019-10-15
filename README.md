@@ -6,8 +6,8 @@ SDL2 ControllerMap is a utility for building [SDL2 Controller Mappings].
 
 Press the buttons as they are highlighted.
 
-To skip a button that your device doesn't have, press B (or whatever button has
-the 0 keycode).
+To skip a button that your device doesn't have, press a button that you've
+already bound.
 
 When the thumbstick arrow shows up, move the stick in this order:
 left, right, up, down.

@@ -282,6 +282,9 @@ WatchJoystick(SDL_Joystick * joystick)
 #endif
                     for (_s = 0; _s < s; _s++) {
                         if (steps[_s].button == event.jbutton.button) {
+                            SDL_Log("  already bound, skipping to next button");
+                            s++;
+                            next=SDL_TRUE;
                             break;
                         }
                     }

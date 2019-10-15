@@ -6,8 +6,7 @@ SDL2 ControllerMap is a utility for building [SDL2 Controller Mappings].
 
 Press the buttons as they are highlighted.
 
-**NOTE:** The visual aid is similar to an XBox controller, which has A and B
-reversed compared to RG350/GCW0.
+**NOTE:** The visual aid is similar to an XBox controller, which has `A<->B` and `X<->Y` reversed compared to RG350/GCW0.
 
 To skip a button that your device doesn't have, press a button that you've
 already bound.
@@ -28,4 +27,4 @@ BUILDROOT=/path/to/buildroot ./build-opendingux.sh
 
 The OPK will be at `build/controllermap-sdl2.opk`.
 
-[SDL2 Controller Mappings]: https://wiki.libsdl.org/CategoryGameController
+[sdl2 controller mappings]: https://wiki.libsdl.org/CategoryGameController

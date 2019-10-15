@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=controllermap
+Comment=SDL2 GAMECONTROLLERCONFIG mapper
+Exec=./controllermap.sh
+Logo=logo.png
+Terminal=false
+Type=Application
+StartupNotify=true
+Icon=logo
+Categories=applications;
+X-OD-NeedsJoystick=true

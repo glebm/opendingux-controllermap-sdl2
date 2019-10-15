@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=controllermap
-Comment=SDL2 GAMECONTROLLERCONFIG mapper
+Comment=SDL2 Controller Mapper
 Exec=./controllermap.sh
 Logo=logo.png
 Terminal=false

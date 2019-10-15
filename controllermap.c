@@ -304,6 +304,9 @@ WatchJoystick(SDL_Joystick * joystick)
                     next=SDL_TRUE;
                     break;
                 case SDL_KEYDOWN:
+                    SDL_Log("KEY %s %s\n",
+                          SDL_GetScancodeName(event.key.keysym.scancode),
+                          SDL_GetKeyName(event.key.keysym.sym));
                     if (event.key.keysym.sym == SDLK_BACKSPACE || event.key.keysym.sym == SDLK_AC_BACK) {
                         /* Undo! */
                         if (s > 0) {
